@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?z13i1j');
+    src:  url('../fonts/icomoon.eot?z13i1j#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?z13i1j') format('truetype'),
+      url('../fonts/icomoon.woff?z13i1j') format('woff'),
+      url('../fonts/icomoon.svg?z13i1j#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-microsoftoutlook:before {
+    content: "\e900";
+    color: #0072c6;
+  }
+  .icon-location:before {
+    content: "\e947";
+  }
+  .icon-mobile:before {
+    content: "\e958";
+  }
+  
+
+:root{
+    --gray--color: #313337;
+    --teko-font: 'Teko', sans-serif;
+    --white-s : whitesmoke;
+    --lato-font: 'Lato', sans-serif;
+    --green-color: green;
+    --bg-color: #3a3b3d66;
+}
+
+body{
+    display: grid;
+    grid-template: 120px 80px 500px 500px/1fr 1fr 1fr;
+    font-family: var(--lato-font);
+}
+
+.header{
+    grid-column: 1 / span 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header p{
+    font-family:  var(--teko-font);
+    font-size: 1em;
+}
+
+.header-div{
+    text-align: center;
+}
+
+.header-logo figure{
+    margin: 0;
+}
+
+.header-logo figure img{
+    width: 106px;
+}
+
+.header-icon{
+    font-size: 3em;
+}
+
+.nav-bar{
+    grid-column: 1 /span 3;
+    background: var(--gray--color);
+    display: flex;
+    align-items: center;
+  justify-content: space-around;
+}
+
+.nav-bar-list{
+    list-style: none;
+    display: flex;
+}
+
+
+.nav-bar li{
+    margin-right: 5em;
+}
+
+.nav-bar-list li a{
+    margin-left: 10px;
+}
+
+
+.nav-bar-list li a{
+    text-decoration: none;
+    color: var(--white-s);
+    font-size: 2em;
+}
+
+.nav-bar-list li:nth-child(3) a{
+    color: green;
+    font-weight: bold;
+}
+
+.hero{
+    grid-column:  1/span 3;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.hero-overlay{
+    position:absolute;
+    z-index: 1;
+    top:  0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center
+}
+
+.hero-video-container{
+    margin: 0;  
+}
+
+.hero-video-container video{
+    width: 100%;
+    height: auto;
+    
+}
+.hero-title{
+    color: var(--white-s);
+    font-weight: bold;
+    font-family: var(--teko-font);
+    font-size: 13.5vw;
+}
+
+.jobs{
+    grid-column: 1/span 3;
+}
+
+.jobs-grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.job-article-img-container{
+    margin: 0;
+}
+
+.job-article-img-container img{
+    width: 50%;
+}
