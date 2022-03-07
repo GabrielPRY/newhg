@@ -52,14 +52,14 @@
     }
 }
 
-@media screen and (max-width: 393px) and (min-width: 360px) {
+@media screen and (max-width: 394px) and (min-width: 360px) {
 
     h1{
         font-size: 1.5em;
     }
 
     body{
-        grid-template: 60px 80px 190px 1fr 130px 500px 80px/1fr 1fr 1fr;
+        grid-template: 60px 80px 214px 1fr 130px 500px 80px/1fr 1fr 1fr;
     }
 
     .header-logo figure img {
@@ -108,6 +108,7 @@
     .job-article-im-container img{
         width: 70%;
     }
+}
 
 @media screen and (max-width: 320px) {
 
