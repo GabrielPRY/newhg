@@ -17,7 +17,7 @@
 @media screen and (max-width: 480px) {
 
     body{
-        grid-template: 110px 50px 315px 1fr 130px 500px 80px/1fr 1fr 1fr;
+        grid-template: 110px 90px 315px 1fr 130px 500px 80px/1fr 1fr 1fr;
     }
 
     .hero-overlay img{
@@ -27,9 +27,17 @@
     }
 
     .nav-bar-list li a{
-    font-size: 15px;
-    margin-left: 0px;
-    }
+        font-size: 1em;
+        }
+    
+        .nav-bar-list{
+            flex-direction: column;
+        }
+    
+        .nav-bar-list li{
+            margin-top: 5px;
+            margin-right: 3em;
+        }
 
     .contac-div{
         width: 80%;
