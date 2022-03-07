@@ -52,6 +52,63 @@
     }
 }
 
+@media screen and (max-width: 360px) {
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    body{
+        grid-template: 60px 80px 190px 1fr 130px 500px 80px/1fr 1fr 1fr;
+    }
+
+    .header-logo figure img {
+        width: 60px;
+    }
+
+    .header-icon{
+        font-size: 1em;
+    }
+
+    .header p{
+        font-size: 10px;
+    }
+
+    .hero-overlay{
+        height: 95%;
+    }
+    
+    .hero-overlay img{
+        top: 1em;
+        left: 5em;
+        width: 50%;
+    }
+
+    .nav-bar-list li a{
+    font-size: 1em;
+    }
+
+    .nav-bar-list{
+        flex-direction: column;
+    }
+
+    .nav-bar-list li{
+        margin-top: 5px;
+        margin-right: 3em;
+    }
+
+    .contac-div{
+        width: 80%;
+    }
+
+    .jobs-grid-container{
+        grid-template-columns: 1fr;
+    }
+
+    .job-article-im-container img{
+        width: 70%;
+    }
+
 @media screen and (max-width: 320px) {
 
     h1{
