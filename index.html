@@ -42,11 +42,11 @@
     <nav class="nav-bar">
         <ul class="nav-bar-list">
             <li>
-                <a href="#">Trabajos</a>
+                <a href="#trabajos">Trabajos</a>
             </li>
 
             <li>
-                <a href="#">Experiencia</a>
+                <a href="#experiencia">Experiencia</a>
             </li>
 
             <li>
@@ -75,11 +75,7 @@
                 </figure>
                 <div class="job-article-details">
                     <h3>Tablero</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis repudiandae inventore omnis
-                        consequuntur
-                        odio nihil optio sapiente magnam numquam soluta perspiciatis incidunt obcaecati dolore voluptatum
-                        aut facilis repellendus,
-                        pariatur consectetur!</p>
+                    <p>Descripción del tablero</p>
                 </div>
             </article>
 
@@ -89,11 +85,7 @@
                 </figure>
                 <div class="job-article-details">
                     <h3>Tablero</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis repudiandae inventore omnis
-                        consequuntur
-                        odio nihil optio sapiente magnam numquam soluta perspiciatis incidunt obcaecati dolore voluptatum
-                        aut facilis repellendus,
-                        pariatur consectetur!</p>
+                    <p>Descripción del tablero</p>
                 </div>
             </article>
 
@@ -103,21 +95,51 @@
                 </figure>
                 <div class="job-article-details">
                     <h3>Tablero</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis repudiandae inventore omnis
-                        consequuntur
-                        odio nihil optio sapiente magnam numquam soluta perspiciatis incidunt obcaecati dolore voluptatum
-                        aut facilis repellendus,
-                        pariatur consectetur!</p>
+                    <p>Descripción del tablero</p>
                 </div>
             </article>
         </div>
     </section>
 
-    <section class="experience-section">
-        <article class="experience">
-            <h2>Experiencia</h2>
-            <p>Con más de 30 años de trabajo en Rieder & cia en montajes, cabledados, mantenimiento y demás.</p>
+    <section id="experiencia" class="experience-section">
+        <h1>Experiencia</h1>
+        <article class="experience-article">
+            <p>Con más de 30 años de experiencia en el rubro y con trabajos para Rieder & Cia. entre otros</p>
         </article>
+    </section>
+
+
+    <section id="contacto" class="contac-section">
+        <h1>¿Tienes un proyecto?</h1>
+        <div class="contac-div">
+            <form action="https://google.com" method="post" class="contac-form">
+                <label for="name">Nombre:</label>
+                <br>
+                <input type="text" name="name" placeholder="Nombre" class="form-data" required>
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input type="text" name="email" placeholder="Email" class="form-data" required>
+                <br>
+                <label for="phone">Teléfono:</label>
+                <br>
+                <input type="text" name="phone" placeholder="Teléfono" class="form-data" required>
+                <br>
+                <label for="company">Empresa:</label>
+                <br>
+                <input type="text" name="name" placeholder="Empresa" class="form-data" required>
+                <br>
+                <label for="project">Proyecto:</label>
+                <br>
+                <input type="text" name="project" placeholder="Proyecto" class="form-data" required>
+                <br>
+                <label for="details">Detalles:</label>
+                <br>
+                <input type="text" name="details" placeholder="Detalles" class="form-data" required>
+                <br>
+                <input type="submit" class="data-submit" value="Enviar">
+            </form>
+        </div>
     </section>
 
     <footer>

@@ -48,7 +48,7 @@
 
 body{
     display: grid;
-    grid-template: 120px 80px 500px 500px 500px 80px/1fr 1fr 1fr;
+    grid-template: 120px 80px 500px 1fr 130px 500px 80px/1fr 1fr 1fr;
     font-family: var(--lato-font);
 }
 
@@ -147,21 +147,20 @@ body{
     grid-column: 1/span 3;
 }
 
+.jobs h1{
+    text-align: center;
+}
+
 .jobs-grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
-
-.job-article-img-container{
-    margin: 0;
+    gap: 10px;
+    padding: 1px 2em;
 }
 
 .job-article-img-container img{
-    width: 50%;
-}
-
-.experience-section{
-    grid-column:  1/span 3;
+    width: 100%;
+    object-fit: cover;
 }
 
 footer{
@@ -172,6 +171,7 @@ footer{
     padding: 10px;
     justify-content: space-between;
     align-items: center;
+    border-top:1px solid whitesmoke ;
 }
 
 .footer-logo-container{
@@ -180,4 +180,73 @@ footer{
 
 .footer-logo-container img{
     width: 50px;
+}
+
+.job-article{
+   overflow: hidden;
+}
+
+.job-article-img-container{
+    margin: 0;
+    text-align: center;
+}
+
+.job-article-details{
+    padding: 1em;
+    background-color: var(--gray--color);
+    color: white;
+    margin: 2em;
+    margin-top: -2em;
+    position: relative;
+}
+
+.job-article-details h3{
+    text-align: center;
+}
+
+.experience-section{
+ grid-column: 1/span 3;
+ text-align: center;
+}
+
+.contac-section{
+    background-color: var(--gray--color);
+    grid-column: 1/span 3;
+    color: white;
+    font-weight: bolder;
+}
+
+.contac-section h1{
+    text-align: center;
+}
+
+.contac-div{
+    color: black;
+    background: whitesmoke;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.form-data{
+    width: 60%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.contac-form{
+    border: 3px solid var(--bg-color);
+}
+
+.data-submit{
+    margin-top: 10px;
+    width: 120px;
+    padding: 1em;
+    background-color: var(--green-color);
+    color: white;
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
 }
